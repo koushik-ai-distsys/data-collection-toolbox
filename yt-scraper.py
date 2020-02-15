@@ -20,7 +20,7 @@ def main():
     if downloadOptions == "000":
         raise Exception("Nothing to download! Try another option with --download")
 
-    download_options_from_url(url, downloadOptions, outputDirectory)
+    download_content_from_url(url, downloadOptions, outputDirectory)
 
 def get_arguments():
     ap = argparse.ArgumentParser()
@@ -35,7 +35,7 @@ def prepend_filename(prefix, fileObject):
     newFileName = prefix + "_" + fileName
     os.rename(fileName, newFileName)
 
-def download_options_from_url(url, downloadOptions, outputDirectory):
+def download_content_from_url(url, downloadOptions, outputDirectory):
     # change to output directory
     os.chdir(outputDirectory)
     # unpack downloadOptions, convert each element to int and assign each to corresponding variable
