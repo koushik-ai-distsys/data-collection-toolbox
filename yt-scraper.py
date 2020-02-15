@@ -1,7 +1,7 @@
 '''
 Simple YouTube scraper - scrapes audio, video without audio, video based on user's preference
 
-Run program using command: python yt-scraper.py --url <URL> --output <OUTPUT_DIRECTORY> --download <DOWNLOAD_OPTION>
+Usage: python yt-scraper.py --url <URL> --output <OUTPUT_DIRECTORY> --download <DOWNLOAD_OPTION>
 
 Eg: (Downloads "Avicii - Wake Me Up (Official Video)" with all options to current directory)
 python yt-scraper.py --url https://www.youtube.com/watch?v=IcrbM1l_BoI --output . --download 111
